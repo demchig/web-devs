@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EndItemRequest xmlns="urn:ebay:apis:eBLBaseComponents">
+  <RequesterCredentials>
+<eBayAuthToken>###TOKEN###</eBayAuthToken>
+</RequesterCredentials>
+  <ItemID>110124419510</ItemID>
+  <EndingReason>NotAvailable</EndingReason>
+</EndItemRequest>

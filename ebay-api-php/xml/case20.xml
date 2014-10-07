@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelistFixedPriceItemRequest xmlns="urn:ebay:apis:eBLBaseComponents">
+  <RequesterCredentials>
+<eBayAuthToken>###TOKEN###</eBayAuthToken>
+</RequesterCredentials>
+  <Item>
+  <InventoryTrackingMethod>SKU</InventoryTrackingMethod>
+  <SKU>R10001</SKU>
+  </Item>
+</RelistFixedPriceItemRequest>

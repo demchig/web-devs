@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReviseItemRequest xmlns="urn:ebay:apis:eBLBaseComponents">
+  <RequesterCredentials>
+<eBayAuthToken>###TOKEN###</eBayAuthToken>
+</RequesterCredentials>
+  <Item>
+  <ItemID>110124418265</ItemID>
+  <Description>
+    Revised description. 
+  </Description>
+  </Item>
+</ReviseItemRequest>

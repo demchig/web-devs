@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AddFixedPriceItemRequest xmlns="urn:ebay:apis:eBLBaseComponents">
+  <RequesterCredentials>
+<eBayAuthToken>###TOKEN###</eBayAuthToken>
+</RequesterCredentials>
+  <Item>
+  <Title>Tiffany ring</Title>
+  <Description>
+    Very cute ring. 
+  </Description>
+  <PrimaryCategory>
+    <CategoryID>67681</CategoryID>
+  </PrimaryCategory>
+  <ItemSpecifics>
+    <NameValueList>
+      <Name>Brand</Name><Value>Tiffany</Value>
+    </NameValueList>
+    <NameValueList>
+      <Name>Style</Name><Value>Signet</Value>
+    </NameValueList>
+    <NameValueList>
+      <Name>Metal</Name><Value>Titanium</Value>
+    </NameValueList>
+    <NameValueList>
+      <Name>Ring Size</Name><Value>6</Value>
+    </NameValueList>
+  </ItemSpecifics> 
+  <ConditionID>1000</ConditionID>
+  <StartPrice>300</StartPrice>
+  <CategoryMappingAllowed>true</CategoryMappingAllowed>
+  <Country>US</Country>
+  <Currency>USD</Currency>
+  <DispatchTimeMax>3</DispatchTimeMax>
+  <ListingDuration>Days_7</ListingDuration>
+  <ListingType>FixedPriceItem</ListingType>
+  <PaymentMethods>PayPal</PaymentMethods>
+  <PayPalEmailAddress>###PAYPAL_EMAIL###</PayPalEmailAddress>
+  <PictureDetails>
+   <PictureURL>http://ebaydemo.jpn.org/images/tiffany.jpg</PictureURL>
+  </PictureDetails>
+  <PostalCode>95125</PostalCode>
+  <Quantity>1</Quantity>
+  <ReturnPolicy>
+    <ReturnsAcceptedOption>ReturnsAccepted</ReturnsAcceptedOption>
+    <RefundOption>MoneyBack</RefundOption>
+    <ReturnsWithinOption>Days_30</ReturnsWithinOption>
+    <Description>If you are not satisfied, return the ring for refund.</Description>
+    <ShippingCostPaidByOption>Buyer</ShippingCostPaidByOption>
+  </ReturnPolicy>
+  <ShippingDetails>
+    <ShippingType>Flat</ShippingType>
+    <ShippingServiceOptions>
+      <ShippingServicePriority>1</ShippingServicePriority>
+      <ShippingService>USPSMedia</ShippingService>
+      <ShippingServiceCost>2.50</ShippingServiceCost>
+    </ShippingServiceOptions>
+  </ShippingDetails>
+  <Site>US</Site>
+  </Item>
+</AddFixedPriceItemRequest>

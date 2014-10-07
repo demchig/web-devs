@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BulkDataExchangeRequests>
+  <Header>
+    <SiteID>0</SiteID>
+    <Version>829</Version>
+  </Header>
+
+<AddItemRequest xmlns="urn:ebay:apis:eBLBaseComponents">
+  <Version>###TRADING_VER###</Version>
+  <MessageID>A123456</MessageID>
+  <Item>
+  <Title>Luis Vuitton Bag1</Title>
+  <Description>Brand new bag.</Description>
+  <PrimaryCategory>
+    <CategoryID>63852</CategoryID>
+  </PrimaryCategory>
+  <ItemSpecifics>
+    <NameValueList>
+      <Name>Brand</Name><Value>Louis Vuitton</Value>
+    </NameValueList>
+    <NameValueList>
+      <Name>Style</Name><Value>Shoulder Bag</Value>
+    </NameValueList>
+  </ItemSpecifics>
+  <ConditionID>1000</ConditionID>
+  <StartPrice>100</StartPrice>
+  <CategoryMappingAllowed>true</CategoryMappingAllowed>
+  <Country>US</Country>
+  <Currency>USD</Currency>
+  <DispatchTimeMax>3</DispatchTimeMax>
+  <ListingDuration>Days_7</ListingDuration>
+  <ListingType>Chinese</ListingType>
+  <PaymentMethods>PayPal</PaymentMethods>
+  <PayPalEmailAddress>###PAYPAL_EMAIL###</PayPalEmailAddress>
+  <PictureDetails>
+   <PictureURL>http://ebaydemo.jpn.org/images/lv_bag1.jpg</PictureURL>
+  </PictureDetails>
+  <PostalCode>95125</PostalCode>
+  <Quantity>1</Quantity>
+  <ReturnPolicy>
+    <ReturnsAcceptedOption>ReturnsAccepted</ReturnsAcceptedOption>
+    <RefundOption>MoneyBack</RefundOption>
+    <ReturnsWithinOption>Days_30</ReturnsWithinOption>
+    <Description>If you are not satisfied, return the bag for refund.</Description>
+    <ShippingCostPaidByOption>Buyer</ShippingCostPaidByOption>
+  </ReturnPolicy>
+  <ShippingDetails>
+    <ShippingType>Flat</ShippingType>
+    <ShippingServiceOptions>
+      <ShippingServicePriority>1</ShippingServicePriority>
+      <ShippingService>USPSMedia</ShippingService>
+      <ShippingServiceCost>2.50</ShippingServiceCost>
+    </ShippingServiceOptions>
+  </ShippingDetails>
+  <Site>US</Site>
+  </Item>
+</AddItemRequest>
+
+<AddItemRequest xmlns="urn:ebay:apis:eBLBaseComponents">
+  <Version>###TRADING_VER###</Version>
+  <MessageID>B123456</MessageID>
+  <Item>
+  <Title>Luis Vuitton Bag2</Title>
+  <Description>Brand new bag.</Description>
+  <PrimaryCategory>
+    <CategoryID>169296</CategoryID>
+  </PrimaryCategory>
+  <ConditionID>1000</ConditionID>
+  <StartPrice>100</StartPrice>
+  <CategoryMappingAllowed>true</CategoryMappingAllowed>
+  <Country>US</Country>
+  <Currency>USD</Currency>
+  <DispatchTimeMax>3</DispatchTimeMax>
+  <ListingDuration>Days_7</ListingDuration>
+  <ListingType>Chinese</ListingType>
+  <PaymentMethods>PayPal</PaymentMethods>
+  <PayPalEmailAddress>###PAYPAL_EMAIL###</PayPalEmailAddress>
+  <PictureDetails>
+   <PictureURL>http://ebaydemo.jpn.org/images/lv_bag2.jpg</PictureURL>
+  </PictureDetails>
+  <PostalCode>95125</PostalCode>
+  <Quantity>1</Quantity>
+  <ReturnPolicy>
+    <ReturnsAcceptedOption>ReturnsAccepted</ReturnsAcceptedOption>
+    <RefundOption>MoneyBack</RefundOption>
+    <ReturnsWithinOption>Days_30</ReturnsWithinOption>
+    <Description>If you are not satisfied, return the bag for refund.</Description>
+    <ShippingCostPaidByOption>Buyer</ShippingCostPaidByOption>
+  </ReturnPolicy>
+  <ShippingDetails>
+    <ShippingType>Flat</ShippingType>
+    <ShippingServiceOptions>
+      <ShippingServicePriority>1</ShippingServicePriority>
+      <ShippingService>USPSMedia</ShippingService>
+      <ShippingServiceCost>2.50</ShippingServiceCost>
+    </ShippingServiceOptions>
+  </ShippingDetails>
+  <Site>US</Site>
+  </Item>
+</AddItemRequest>
+
+</BulkDataExchangeRequests>

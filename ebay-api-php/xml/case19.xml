@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelistItemRequest xmlns="urn:ebay:apis:eBLBaseComponents">
+  <RequesterCredentials>
+<eBayAuthToken>###TOKEN###</eBayAuthToken>
+</RequesterCredentials>
+  <Item>
+  <ItemID>110125055209</ItemID>
+  </Item>
+</RelistItemRequest>

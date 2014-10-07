@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title>yahoo auction search</title>
+</head>
+<body>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script type="text/javascript">
+
+function showResult(result) {
+	alert("count" + result.ResultSet.totalResultsAvailable );
+
+	var prods = "";
+	if( result.ResultSet.totalResultsAvailable > 0 ){
+		for( var i in result.ResultSet[0].Result ){
+			prods += " " + result.ResultSet[0].Result[i].Name;
+		}
+	}
+
+	alert(prods);
+}
+
+
+$(function(){
+
+	var appid =  'dj0zaiZpPVRWSkZvTU5NVFAwNyZzPWNvbnN1bWVyc2VjcmV0Jng9N2E-';
+
+	$("#search").click(function() {
+		var keyword = $('#keyword').val();
+
+		var url = "http://shopping.yahooapis.jp/ShoppingWebService/V1/json/itemSearch?appid=" + appid + "&query=" + encodeURI( keyword ) + "&o=json&callback=showResult";
+  
+		var $target = $("#jsonp");
+		$target.prop("src", url);
+
+		$("a.url").prop("href", url);
+	});
+
+});
+
+</script>
+
+
+<form>
+	<input type="text" name="keyword" id="keyword" />
+	<button type="button" id="search">Click Me!</button> 
+</form>
+
+<script id="jsonp" type="text/javascript" ></script>
+
+<p>
+	<a class="url" href=""> Link </a>
+</p>
+
+</body>
+</html>

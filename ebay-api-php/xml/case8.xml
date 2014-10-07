@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReviseFixedPriceItemRequest xmlns="urn:ebay:apis:eBLBaseComponents">
+  <RequesterCredentials>
+<eBayAuthToken>###TOKEN###</eBayAuthToken>
+</RequesterCredentials>
+  <Item>
+  <SKU>R10001</SKU>
+  <PictureDetails>
+   <PictureURL>http://ebaydemo.jpn.org/images/tiffany_1.jpg</PictureURL>
+  </PictureDetails>
+  </Item>
+</ReviseFixedPriceItemRequest>
