@@ -4,7 +4,9 @@
 </head>
 <body>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="./appid.js"></script>
 
 <script type="text/javascript">
 
@@ -34,12 +36,10 @@ function showResult(result) {
 
 $(function(){
 
-	var appid =  'dj0zaiZpPVRWSkZvTU5NVFAwNyZzPWNvbnN1bWVyc2VjcmV0Jng9N2E-';
-
 	$("#search").click(function() {
 		var keyword = $('#keyword').val();
 
-		var url = "http://auctions.yahooapis.jp/AuctionWebService/V2/json/search?appid=" + appid + "&query=" + encodeURI( keyword ) + "&o=json&callback=showResult";
+		var url = "http://auctions.yahooapis.jp/AuctionWebService/V2/json/search?appid=" + APPID + "&query=" + encodeURI( keyword ) + "&o=json&callback=showResult";
   
 		var $target = $("#jsonp");
 		$target.prop("src", url);
