@@ -9,16 +9,26 @@
 <script type="text/javascript">
 
 function showResult(result) {
-	alert("count" + result.ResultSet.totalResultsAvailable );
+	console.log("count : " + result.ResultSet["@attributes"].totalResultsAvailable );
 
-	var prods = "";
-	if( result.ResultSet.totalResultsAvailable > 0 ){
-		for( var i in result.ResultSet[0].Result ){
-			prods += " " + result.ResultSet[0].Result[i].Name;
+	var $prods = $("ul.result");
+	$prods.html("Loading...");
+
+	if( result.ResultSet["@attributes"].totalResultsAvailable > 0 ){
+		for( var i in result.ResultSet.Result.Item ){
+			var prodObj = result.ResultSet.Result.Item[i];
+
+			var $prod = $("<li></li>");
+			$prod.append($("<img src='" + prodObj.Image +  "' />"));
+			$prod.append($("<a href='" + prodObj.ItemUrl +  "' target=_blank><b>" + prodObj.Title +  "</b></a>"));
+
+			$prods.append($prod);
 		}
 	}
+	else{
+		$prods.html("No result !!");
+	}
 
-	alert(prods);
 }
 
 
@@ -29,7 +39,7 @@ $(function(){
 	$("#search").click(function() {
 		var keyword = $('#keyword').val();
 
-		var url = "http://shopping.yahooapis.jp/ShoppingWebService/V1/json/itemSearch?appid=" + appid + "&query=" + encodeURI( keyword ) + "&o=json&callback=showResult";
+		var url = "http://auctions.yahooapis.jp/AuctionWebService/V2/json/search?appid=" + appid + "&query=" + encodeURI( keyword ) + "&o=json&callback=showResult";
   
 		var $target = $("#jsonp");
 		$target.prop("src", url);
@@ -52,6 +62,10 @@ $(function(){
 <p>
 	<a class="url" href=""> Link </a>
 </p>
+
+<ul class="result">
+
+</ul>
 
 </body>
 </html>
